@@ -1,0 +1,168 @@
+/* styles/Portfolio.module.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #5e5a56;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background: #f0f4f8;
+}
+
+.homeContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.homeText {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.homeImage img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about {
+  padding: 60px 20px;
+  background: #eef6fc;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutImage {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.aboutImage img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aboutText {
+  flex: 2;
+}
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.serviceCards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0070f3;
+}
+
+.contact {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.contactForm {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm input,
+.contactForm textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactForm button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #005bb5;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .homeContent, .aboutContent {
+    flex-direction: column;
+  }
+  
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+}
